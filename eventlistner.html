@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Javascript Event Listener</h2>
+    <button id="mybtn">try it</button>
+    <p id="demo"></p>
+    <script>
+        
+        let x = document.getElementById("mybtn");
+        x.addEventListener("mouseover",myfnc);
+        x.addEventListener("click",mysecfnc);
+        x.addEventListener("mouseout",mytrdfnc);
+        function myfnc(){
+            document.getElementById("demo").innerHTML += "Moused over! <br>";
+        }
+        function mysecfnc(){
+            document.getElementById("demo").innerHTML += "clicked! <br>";
+        }
+        function mytrdfnc(){
+            document.getElementById("demo").innerHTML += "Moused out! <br>";
+        }
+
+    </script>
+</body>
+</html>
