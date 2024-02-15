@@ -4,5 +4,6 @@ fs.writeFile('input.txt', 'Simply Easy leaning!', function(err){
     if(err){
         return console.error(err);
     }
-    console.log
+    console.log("Dat written successfully");
+    console.log("Lets read newly written data");
 });
